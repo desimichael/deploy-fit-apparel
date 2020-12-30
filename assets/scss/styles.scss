@@ -84,6 +84,10 @@ header .menu a {
 	font-weight: 500;
 	padding: 0 20px;
 	color: white;
+	transition: .3s;
+}
+header .menu a:hover {
+	color: #08cf08;
 }
 
 header .menu .dropdown {
@@ -107,8 +111,12 @@ header .menu .dropdown .sub-menu a {
 	color: black;
 	display: block;
 	padding: 0.625rem;
+	transition: .3s;
 }
-
+header .menu .dropdown .sub-menu a:hover {
+	background: black;
+	color: #08cf08;
+}
 /* MOBILE MENU  */
 #mobile-menu {
 	background: black;
@@ -137,6 +145,7 @@ header .menu .dropdown .sub-menu a {
 	color: white;
 	text-transform: uppercase;
 }
+
 #mobile-menu .close-mobile-menu {
 	color: white;
 	height: 50px;
@@ -169,6 +178,10 @@ header .menu .dropdown .sub-menu a {
 	display: inline-block;
 	border-bottom: none;
 	padding: 10px 7px;
+	transition: .3s;
+}
+#mobile-menu .menu > li.dropdown .sub-menu a:hover {
+	color: #08cf08;
 }
 
 /* END MOBILE MENU */
@@ -441,7 +454,7 @@ header .menu .dropdown .sub-menu a {
 	opacity: 1;
 }
 #products-group .product-bg .overlay .product-title {
-	font-size: 1.3rem;
+	font-size: 1rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 5px;
@@ -462,17 +475,35 @@ footer .col-md-4 {
 footer .footer-menu .menu-title,
 footer .social-title {
 	color: #08cf08;
-	font-size: 1rem;
+	font-size: .8rem;
 	text-transform: uppercase;
 	margin-bottom: 0.625rem;
 	display: block;
 }
+footer .footer-menu .main-menu-links .main-link a {
+	color: white;
+	font-size: 0.7rem;
+	transition: .3s;
+	cursor: pointer;
+}
+footer .footer-menu .main-menu-links .main-link:not(:last-child) {
+	margin-bottom: 0.625rem;
+}
+footer .footer-menu .main-menu-links .main-link a:hover {
+	color: #08cf08;
+}
 footer .footer-menu .menu-links .link a {
 	color: white;
-	font-size: 0.9rem;
+	text-transform: capitalize;
+	font-size: 0.7rem;
+	font-weight: 300;
+	transition: .3s;
 }
 footer .footer-menu .menu-links .link:not(:last-child) {
 	margin-bottom: 0.625rem;
+}
+footer .footer-menu .menu-links .link a:hover {
+	color: #08cf08;
 }
 footer .social-icons {
 	display: flex;
@@ -562,10 +593,11 @@ footer .address {
 @media (max-width: 575px) {
 	/* body {
     background: blue;
-  } */
+	} */
+	
 	#mobile-menu .close-mobile-menu {
-		right: -19px;
-		top: -18px;
+		right: -10px;
+    top: -18px;
 	}
 	#jumbo .bg-video {
 		transform: scale(3.5, 5);

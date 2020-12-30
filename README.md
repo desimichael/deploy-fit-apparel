@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/38a88512-7bcf-4e40-b228-023c7829a379/deploy-status)](https://app.netlify.com/sites/fit-apparel/deploys)
+
 # Dev-Starter-Kit
 
 
